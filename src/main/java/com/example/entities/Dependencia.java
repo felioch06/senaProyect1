@@ -24,7 +24,7 @@ public class Dependencia implements Serializable{
 	private boolean estado;
 
 	@Id
-	@GeneratedValue( strategy = GenerationType.IDENTITY )
+	@GeneratedValue( strategy = GenerationType.IDENTITY)
 	@Column( name = "ID_DEPENDENCIA_PK", nullable = false )
 	public int getId() {
 		return id;
@@ -59,5 +59,11 @@ public class Dependencia implements Serializable{
 
 	public void setEstado(boolean estado) {
 		this.estado = estado;
+	}
+	
+	@Override
+	public String toString() {
+	return "Dependencia [id=" + id + ", descripcion=" + descripcion + ", cargo="
+	+ cargo + ", estado=" + estado + "]";
 	}
 }

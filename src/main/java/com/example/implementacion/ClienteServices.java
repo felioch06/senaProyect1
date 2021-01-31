@@ -11,17 +11,19 @@ import com.example.services.IUsuarioServices;
 
 @Service
 public class ClienteServices implements IUsuarioServices{
+	
 @Autowired
 private IUsuarioDao clienteDao;
+
 @Transactional(readOnly = true)
 public List<Usuario> findAll() {
 return (List<Usuario>) clienteDao.findAll();
 }
+
 @Transactional(readOnly = false)
 public Usuario create(Usuario usuario){
 return clienteDao.save(usuario);
 }
-
 
 @Transactional(readOnly = false)
 public Usuario update(Usuario usuario){
