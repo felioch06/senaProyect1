@@ -1,7 +1,8 @@
-package services;
+package com.example.services;
 
 import java.util.List;
-import entities.Usuario;
+
+import com.example.entities.Usuario;
 
 public interface IUsuarioServices {
 	

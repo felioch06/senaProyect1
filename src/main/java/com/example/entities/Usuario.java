@@ -1,4 +1,4 @@
-package entities;
+package com.example.entities;
 
 import java.io.Serializable;
 
@@ -11,8 +11,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
-
-import org.springframework.data.annotation.Id;
+import javax.persistence.Id;
 
 @Entity
 @Table( name = "USUARIOS" )
